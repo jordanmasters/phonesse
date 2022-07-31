@@ -3,14 +3,18 @@ Phonesse is a toolkit for dealing with verbal sound patterns. It supports visual
 
 ## Documentation
 
-Demos and [Documentation](https://jordanmasters.github.io/phonomials/index.html) are available online.
+ReadTheDocs walkthrough and [documentation](https://jordanmasters.github.io/phonomials/_static/overviews/phonesse.html) is available online.
 
 
 ## Disclaimer
 
-Licence, and notice of work in progress
+Licence, and notice of work in progress 
 
 ## Setup
+
+`pip install phonesse` download & install will be available soon
+
+for now...
 
 ### Download
 
@@ -24,6 +28,7 @@ This is so you don't have to be in the phonomials folder to 'import phonomials'
 
 ```
 $ cd phonesse
+
 $ pip install ./
 or 
 $ pip install --user ./ --upgrade
@@ -34,26 +39,29 @@ Note: package still under development. Phonesse will be available for download a
 
 ## Basic Usage
 
-
 ```
-from phonessee import phonesse
+from phonesse import phonesse
 
 # get segments
 
 >>> phonesse.get_segments("It is this easy to get vowel segments from text", segments='vowels')
 ['IH', 'IH', 'IH', 'IY', 'IY', 'UW', 'EH', 'AW', 'EH', 'AH', 'AH', 'EH']
-phonesse.get_segments("Just as easy to get the underlying stress pattern", segments='stress')
+
+>>> phonesse.get_segments("Just as easy to get the underlying stress pattern", segments='stress')
 [1, 1, 1, 0, 1, 1, 0, 2, 0, 1, 0, 1, 1, 0]
 
 >>> phonesse.get_segments("Or the first sound of each word", segments='word_initial')
 ['AO1', 'DH', 'F', 'S', 'AH1', 'IY1', 'W']
 
+>>> phonesse.n_grams(['IH', 'IH', 'IH', 'IY', 'IY', 'UW', 'EH', 'AW', 'EH', 'AH', 'AH', 'EH'],2)
+
+```
+
+Neural-Net Back-up
+```
 # a neural network deals with misspelled or unknown words.
 >>> phonesse.get_segments("Badd Sppellling is fine", segments='consonants')
-['B', 'D', 'S', 'P', 'L', 'NG', 'Z', 'F', 'N']
-
-phonesse.n_grams(['IH', 'IH', 'IH', 'IY', 'IY', 'UW', 'EH', 'AW', 'EH', 'AH', 'AH', 'EH'],2)
-
+['B', 'D', 'S', 'P', 'L', 'NG', 'Z', 'F', 'N'
 ```
 
 Plotting

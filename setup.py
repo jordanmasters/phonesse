@@ -7,7 +7,7 @@ from setuptools import setup
 
 
 setup(name='phonesse',
-      version='0.1',
+      version='0.1.0',
       description='Sound Search Regex Interface',
       # long_description=readme(),
       classifiers=[
