@@ -3,18 +3,16 @@ Phonesse is a toolkit for dealing with verbal sound patterns. It supports visual
 
 ## Documentation
 
-ReadTheDocs walkthrough and [documentation](https://jordanmasters.github.io/phonomials/_static/overviews/phonesse.html) is available online.
-
+ReadTheDocs [walkthrough and documentation](https://jordanmasters.github.io/phonomials/_static/overviews/phonesse.html) is available online.
 
 ## Disclaimer
 
 Licence, and notice of work in progress 
 
 ## Setup
+will be available soon through `pip install phonesse` for download & install 
 
-`pip install phonesse` download & install will be available soon
-
-for now...
+until then... follow the instructions below
 
 ### Download
 
@@ -24,7 +22,7 @@ $ git clone https://github.com/jordanmasters/phonesse
 
 ### Local pip install
 
-This is so you don't have to be in the phonomials folder to 'import phonomials'
+This is so you don't have to be in the phonesse folder to 'import phonesse'
 
 ```
 $ cd phonesse
@@ -65,6 +63,8 @@ Neural-Net Back-up
 ```
 
 Plotting
+
+Visualize language sounds in MIDI and grids  using psychologically grounded color mappings. 
 ```
 # Plot sounds as MIDI
 phonesse.plot_as_MIDI("It is this easy to see sound segments from text")
