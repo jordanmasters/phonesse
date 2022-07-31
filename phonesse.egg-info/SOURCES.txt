@@ -1,0 +1,12 @@
+README.md
+setup.py
+bin/phonesse
+phonesse/__init__.py
+phonesse/get_cmu.py
+phonesse/phonesse.py
+phonesse.egg-info/PKG-INFO
+phonesse.egg-info/SOURCES.txt
+phonesse.egg-info/dependency_links.txt
+phonesse.egg-info/not-zip-safe
+phonesse.egg-info/requires.txt
+phonesse.egg-info/top_level.txt
